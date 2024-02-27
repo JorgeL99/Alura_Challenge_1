@@ -17,6 +17,6 @@ function encriptar(){
         muñeco.src = "./img/encriptado.jpg";
     }else{
         muñeco.src = "./img/Muñeco.png";
-        alert("Debes ingresar algun texto!");
+        alert("Debes ingresar algun aaaaaaaaaaaaaaatexto!");
     }
 }
