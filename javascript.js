@@ -1,4 +1,3 @@
-
 var botonEncriptar = document.querySelector(".btn-encriptar"); 
 var botonDesencriptar = document.querySelector(".btn-desencriptar"); 
 var munieco = document.querySelector(".contenedor-m"); 
@@ -20,7 +19,7 @@ function desencriptar(){
 }
 
 function recuperarTexto(){
-    var cajatexto = document.querySelector(".texto") //.texto , refiere a textarea
+    var cajatexto = document.querySelector(".texto") 
     return cajatexto.value
 }
 
@@ -56,7 +55,6 @@ function encriptarTexto(mensaje) {
             textoFinal = textoFinal + texto[i]
         }
     }
-
     return textoFinal;
   }
 
@@ -99,9 +97,7 @@ function desencriptarTexto(mensaje){
         }
         
     }
-
     return textoFinal;
-
 }
 
 const btnCopiar = document.querySelector(".btn-copiar"); 
