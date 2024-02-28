@@ -49,3 +49,7 @@ function encriptar() {
         swal("Ooops!", "Debes ingresar un texto", "warning");
       }
   }
+
+  function copiar(){
+    
+  }

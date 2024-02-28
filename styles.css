@@ -94,6 +94,7 @@
     line-height: 19px;
     text-align: center;
     color: #fff;
+    cursor: pointer;
   }
   
   .btn-desencriptar {
@@ -115,10 +116,13 @@
     line-height: 19px;
     text-align: center;
     color: #0a3871;
+    cursor: pointer;
   }
   
   .btn-desencriptar:hover,
-  .btn-encriptar:hover {
+  .btn-encriptar:hover,
+  .btn-copiar:hover
+  {
     margin: 0.3%;
     width: 24.5%;
     padding: 1.8%;
@@ -180,17 +184,24 @@
   }
 
   .btn-copiar{
-    width: 328px;
-    height: 67px; 
-    border-radius: 24px;
-    background-color: #fff;
-    color: #0a3871;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Inter, sans-serif';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
     border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
     cursor: pointer;
-    position: relative;
 
 
   }
