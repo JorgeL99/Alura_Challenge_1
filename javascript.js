@@ -95,7 +95,6 @@ function desencriptarTexto(mensaje){
         else{
             textoFinal = textoFinal + texto[i];
         }
-        
     }
     return textoFinal;
 }
