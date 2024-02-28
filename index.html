@@ -14,39 +14,21 @@
     
     <div class="container">
 
-        <div class="encriptar">  <!-- asdasd -->
-        <img class="logo" src="/img/Logo.png" alt="logo">
-        <textarea
-          name="texto"
-          class="texto"
-          id="texto"
-          cols="30"
-          rows="10"
-          placeholder="Ingresa el texto aquí"
-        ></textarea>
-
+        <div class="encriptar"> 
+          <img class="logo" src="/img/Logo.png" alt="logo">
+          <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
         <div class="terminos">
           <img class="ifo" src="/img/nifo.svg" alt="ifo">
           <p>Solo letras minúsculas y sin acentos.</p>
         </div>
         <div class="botones">
-          <button class="btn-encriptar" type="button" onclick="encriptar()">
-            Encriptar!
-          </button>
-          <input
-            type="button"
-            class="btn-desencriptar"
-            value="Desencriptar!"
-            onclick="desencriptar()"
-          />
+          <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar!</button>
+              <input type="button" class="btn-desencriptar" value="Desencriptar!" onclick="desencriptar()"/>
         </div>
       </div>
 
-
       <div class="encriptado">
-
         <div class="contenedor-resultado">
-          
           <textarea
           name="pepe"
           class="texto-resultado"
@@ -55,11 +37,9 @@
           rows="14"
         ></textarea>
         </div>
-
         <div class="contenedor-m">
           <img src="img/muñeco.png" alt="" id="muñeco" />
         </div>
-          
         <div class="mensaje-encriptado" id="mensaje-encriptado">
           <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
           <p id="parrafo">
@@ -69,11 +49,10 @@
         <div class="btn-copi">
           <input type="button" class="btn-copiar" value="Copiar">
         </div>
-
-
       </div>
     
     </div>
+
   </body>
   <script src="javascript.js"></script>
 </html>
