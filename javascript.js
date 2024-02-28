@@ -26,7 +26,7 @@ function recuperarTexto(){
 
 function encriptarTexto(mensaje) {
     if (mensaje === "") {
-      swal("Ooops!", "Debes ingresar un texto", "warning");
+      swal("Epa!", "No Olvides de Ingresar texto", "warning");
       return "";
     }
   
@@ -63,7 +63,7 @@ function encriptarTexto(mensaje) {
 
 function desencriptarTexto(mensaje){
     if (mensaje === "") {
-        swal("Ooops!", "Debes ingresar un texto", "warning");
+        swal("Epa!", "No Olvides de Ingresar texto", "warning");
         return "";
       }
     var texto = mensaje;
