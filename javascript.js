@@ -4,12 +4,15 @@ var munieco = document.querySelector(".contenedor-m");
 var contenedor = document.querySelector(".mensaje-encriptado"); 
 var resultado = document.querySelector(".texto-resultado"); 
 var texto = document.querySelector(".texto");
+
 botonEncriptar.onclick = encriptar; 
 botonDesencriptar.onclick = desencriptar;
+
 
 function encriptar(){
     var cajatexto = recuperarTexto()
     resultado.textContent = encriptarTexto(cajatexto);
+
 }
 
 function desencriptar(){
@@ -34,6 +37,8 @@ function encriptarTexto(mensaje) {
 
     munieco.classList.add("ocultar");
     contenedor.classList.add("ocultar");
+    const btnCopiar = document.querySelector('.btn-copiar');
+    btnCopiar.style.visibility = 'visible';
 
     for(var i = 0; i < texto.length; i++){
         if(texto[i] == "a"){
@@ -69,6 +74,8 @@ function desencriptarTexto(mensaje){
 
     munieco.classList.add("ocultar");
     contenedor.classList.add("ocultar");
+    const btnCopiar = document.querySelector('.btn-copiar');
+    btnCopiar.style.visibility = 'visible';
 
     for(var i = 0; i < texto.length; i++){
         if(texto[i] == "a"){
@@ -103,5 +110,7 @@ const btnCopiar = document.querySelector(".btn-copiar");
     btnCopiar.addEventListener("click", copiar = () => {
     var contenido = document.querySelector(".texto-resultado").textContent;
     navigator.clipboard.writeText(contenido);
+    swal("Copiado", "El Texto ha sido copiado con Exito!", "success");
+
     
 });
